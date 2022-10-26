@@ -15,7 +15,27 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
-    <style></style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <style>
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        padding: 1em;
+      }
+      .card:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+        border-radius: 50%;
+        width: 50%;
+        margin: auto;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -40,11 +60,79 @@
               <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="places.html">Favorite places</a>
+              <a class="nav-link active" href="places.html"
+                >My favorite places</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://st2.depositphotos.com/1005125/11655/i/600/depositphotos_116550948-stock-photo-simferopol-railway-station-aka-simferopol.jpg"
+              class="card-img-top"
+              alt="Simferopol"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Simferopol</h5>
+              <p class="card-text">Simferopol railway station.</p>
+              <a
+                href="https://st2.depositphotos.com/1005125/11655/i/600/depositphotos_116550948-stock-photo-simferopol-railway-station-aka-simferopol.jpg"
+                class="btn btn-primary"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/1018/300"
+              class="card-img-top"
+              alt="моя картинка"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Road</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a
+                href="https://picsum.photos/id/1018/1500"
+                class="btn btn-primary"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/1041/300"
+              class="card-img-top"
+              alt="моя картинка"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ocean</h5>
+              <p class="card-text">
+                применен генератор текста 20 слов. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Vitae distinctio error, laudantium
+                impedit laborum vel porro pariatur cupiditate minus possimus.
+              </p>
+              <a
+                href="https://picsum.photos/id/1041/1500"
+                target="_blank"
+                class="btn btn-primary"
+                >Large photo (on a separate tab)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
